@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Morgan – Full Stack Developer building modern software." />
+  <title>Alex Morgan · Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="#hero" class="nav-logo">AM<span class="dot">.</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Let's Talk
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ─── -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+
+        <!-- LEFT: text content -->
+        <div class="hero-content">
+          <div class="hero-available reveal">
+            <span class="avail-dot"></span> Available for new projects
+          </div>
+
+          <h1 class="hero-title reveal">
+            Building Smarter<br />
+            Digital Solutions<br />
+            For a Better <span class="highlight-wrap">Future<span class="period">.</span>
+              <!-- Trending-up zigzag arrow — yellow, draws in on load -->
+              <svg class="underline-svg" viewBox="0 0 340 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- zigzag trending-up line -->
+                <path class="uline-path"
+                  d="M4 58 L52 42 L80 54 L120 30 L152 46 L200 16 L240 32 L290 6"
+                  stroke="#f5d84a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <!-- arrowhead at the tip -->
+                <path class="uline-arrow"
+                  d="M268 4 L290 6 L288 28"
+                  stroke="#f5d84a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </span>
+          </h1>
+
+          <p class="hero-sub reveal">
+            I'm <strong>Alex Morgan</strong> — a full stack developer building SaaS, web apps,
+            and high-performance products with care and craft at the core.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#work" class="btn btn-dark">View Projects →</a>
+            <a href="#contact" class="btn btn-outline">Let's Work Together</a>
+            <a href="#" class="btn btn-ghost" aria-label="Download resume">Resume ↗</a>
+          </div>
+
+          <div class="hero-stats reveal">
+            <div class="stat">
+              <strong>5+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat">
+              <strong>40+</strong>
+              <span>Projects Shipped</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat">
+              <strong>98%</strong>
+              <span>Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: photo — square card -->
+        <div class="hero-photo reveal">
+          <div class="hero-photo-frame">
+
+            <!-- square image box -->
+            <div class="photo-square">
+              <img
+                src="assets/images/profile-Photoroom.png"
+                alt="Alex Morgan"
+                class="hero-photo-img"
+              />
+              <!-- yellow corner accent -->
+              <div class="photo-corner-tl" aria-hidden="true"></div>
+              <div class="photo-corner-br" aria-hidden="true"></div>
+            </div>
+
+            <!-- Floating badges -->
+            <div class="hero-badge-tl" aria-hidden="true">
+              <span class="badge-dot"></span> Open to work
+            </div>
+            <div class="hero-badge-br" aria-hidden="true">
+              <strong>Full Stack</strong>
+              <span>Developer</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- floating tech pill strip -->
+      <div class="hero-tech-strip" aria-hidden="true">
+        <div class="tech-track">
+          <span>JavaScript</span><span>Node.js</span><span>PostgreSQL</span><span>MongoDB</span>
+          <span>REST APIs</span><span>GraphQL</span><span>Docker</span><span>Figma</span>
+          <span>Vite</span><span>Redis</span><span>AWS</span><span>CI/CD</span>
+          <!-- duplicate for seamless loop -->
+          <span>JavaScript</span><span>Node.js</span><span>PostgreSQL</span><span>MongoDB</span>
+          <span>REST APIs</span><span>GraphQL</span><span>Docker</span><span>Figma</span>
+          <span>Vite</span><span>Redis</span><span>AWS</span><span>CI/CD</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-img-col reveal">
+          <div class="about-img-frame">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&fit=crop&crop=face"
+              alt="Alex Morgan profile"
+              class="about-photo"
+            />
+            <div class="about-badge">
+              <strong>5+</strong>
+              <span>Years of<br/>Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <p class="eyebrow">About Me</p>
+          <h2 class="section-title">I build things that<br/>live on the web.</h2>
+          <p class="body-text">
+            Hi, I'm <strong>Alex Morgan</strong> — a full-stack developer passionate about
+            clean code, thoughtful design, and fast, accessible products. I specialise in
+            modern JavaScript, scalable backends, and pixel-perfect interfaces.
+          </p>
+          <p class="body-text">
+            When I'm not shipping code, I'm exploring design systems, contributing to open
+            source, or mentoring early-career developers.
+          </p>
+          <div class="about-tags">
+            <span>Problem Solver</span>
+            <span>Clean Code</span>
+            <span>Team Player</span>
+            <span>Fast Learner</span>
+          </div>
+          <a href="#contact" class="btn btn-dark" style="margin-top:2.5rem">Work with me →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SERVICES ─── -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">What I Do</p>
+          <h2 class="section-title">Services I Offer.</h2>
+        </div>
+        <div class="services-grid">
+
+          <article class="service-card reveal" tabindex="0">
+            <span class="service-num">01</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Fast, accessible, responsive websites — semantic HTML, modern CSS, vanilla or framework JS.</p>
+          </article>
+
+          <article class="service-card reveal" tabindex="0">
+            <span class="service-num">02</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>UI / UX Design</h3>
+            <p>Intuitive interfaces from wireframes to polished production designs that users actually enjoy.</p>
+          </article>
+
+          <article class="service-card reveal" tabindex="0">
+            <span class="service-num">03</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+            </div>
+            <h3>API Development</h3>
+            <p>RESTful and GraphQL APIs built for performance, security, and long-term maintainability.</p>
+          </article>
+
+          <article class="service-card reveal" tabindex="0">
+            <span class="service-num">04</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Performance Audits</h3>
+            <p>Core Web Vitals, bundle analysis, and Lighthouse-driven improvements for blazing-fast sites.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WORK ─── -->
+    <section class="work section" id="work">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <p class="eyebrow">Portfolio</p>
+            <h2 class="section-title">Selected Work.</h2>
+          </div>
+          <div class="work-filters" role="tablist" aria-label="Filter projects">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web App</button>
+            <button class="filter-btn" data-filter="design" role="tab" aria-selected="false">Design</button>
+            <button class="filter-btn" data-filter="api" role="tab" aria-selected="false">API</button>
+          </div>
+        </div>
+
+        <div class="work-grid" id="workGrid">
+
+          <article class="project-card reveal" data-category="web" tabindex="0">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&fit=crop" alt="Fintrack Dashboard" class="project-thumb-img" />
+              <div class="project-links">
+                <a href="#" class="plink" aria-label="View Fintrack live">Live ↗</a>
+                <a href="#" class="plink" aria-label="View Fintrack code">Code ↗</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="ptag">Web App</span>
+                <span class="pyear">2025</span>
+              </div>
+              <h3>Fintrack Dashboard</h3>
+              <p>Real-time financial SaaS with live charts, budget planner, and multi-account sync.</p>
+              <div class="pstack"><span>Node.js</span><span>PostgreSQL</span><span>Chart.js</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="design" tabindex="0">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80&fit=crop" alt="Bloom UI Kit" class="project-thumb-img" />
+              <div class="project-links">
+                <a href="#" class="plink" aria-label="View Bloom live">Live ↗</a>
+                <a href="#" class="plink" aria-label="View Bloom code">Code ↗</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="ptag">Design</span>
+                <span class="pyear">2025</span>
+              </div>
+              <h3>Bloom UI Kit</h3>
+              <p>200+ component design system with dark/light tokens and Figma-to-code export.</p>
+              <div class="pstack"><span>Figma</span><span>CSS Vars</span><span>Storybook</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="api" tabindex="0">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80&fit=crop" alt="APIForge" class="project-thumb-img" />
+              <div class="project-links">
+                <a href="#" class="plink" aria-label="View APIForge live">Live ↗</a>
+                <a href="#" class="plink" aria-label="View APIForge code">Code ↗</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="ptag">API</span>
+                <span class="pyear">2024</span>
+              </div>
+              <h3>APIForge</h3>
+              <p>Developer tool for scaffolding, documenting, and mock-testing REST APIs with OpenAPI export.</p>
+              <div class="pstack"><span>Express</span><span>OpenAPI</span><span>Redis</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web" tabindex="0">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80&fit=crop" alt="ShopKit Commerce" class="project-thumb-img" />
+              <div class="project-links">
+                <a href="#" class="plink" aria-label="View ShopKit live">Live ↗</a>
+                <a href="#" class="plink" aria-label="View ShopKit code">Code ↗</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="ptag">Web App</span>
+                <span class="pyear">2024</span>
+              </div>
+              <h3>ShopKit Commerce</h3>
+              <p>Headless e-commerce storefront with cart management, Stripe payments, and inventory sync.</p>
+              <div class="pstack"><span>Vanilla JS</span><span>Stripe</span><span>MongoDB</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SKILLS ─── -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Expertise</p>
+          <h2 class="section-title">Tech Stack &amp; Skills.</h2>
+        </div>
+        <div class="skills-layout">
+
+          <div class="skills-bars reveal">
+            <div class="skill-row">
+              <div class="skill-meta"><span>HTML &amp; CSS</span><span>96%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="96"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span>JavaScript</span><span>90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span>Node.js / Express</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span>Databases (SQL / NoSQL)</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span>UI / UX Design</span><span>78%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+          </div>
+
+          <div class="skills-cloud reveal">
+            <p class="cloud-label">Tools &amp; Technologies</p>
+            <div class="cloud-tags">
+              <span>Git &amp; GitHub</span><span>Docker</span><span>REST APIs</span>
+              <span>GraphQL</span><span>PostgreSQL</span><span>MongoDB</span>
+              <span>Redis</span><span>Linux</span><span>CI/CD</span>
+              <span>Figma</span><span>Webpack</span><span>Vite</span>
+              <span>AWS S3</span><span>Vercel</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TESTIMONIALS ─── -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Kind Words</p>
+          <h2 class="section-title">What Clients Say.</h2>
+        </div>
+        <div class="testi-grid">
+
+          <article class="testi-card reveal" tabindex="0">
+            <p class="testi-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote>"Alex delivered our dashboard in record time with flawless attention to detail. Clean, documented code that was easy to extend. Highly recommend."</blockquote>
+            <footer class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">JR</div>
+              <div>
+                <strong>Jamie Rodriguez</strong>
+                <span>CTO, Fintrack Inc.</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testi-card reveal" tabindex="0">
+            <p class="testi-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote>"The redesign exceeded every expectation. Performance scores jumped from 60 to 98 on mobile. Alex just gets it — design and code in one package."</blockquote>
+            <footer class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">SC</div>
+              <div>
+                <strong>Sarah Chen</strong>
+                <span>Product Lead, Bloom</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testi-card reveal" tabindex="0">
+            <p class="testi-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote>"Professional, communicative, and technically brilliant. The kind of developer you keep on retainer — every project ships on time, every time."</blockquote>
+            <footer class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">MK</div>
+              <div>
+                <strong>Marcus Kim</strong>
+                <span>Founder, ShopKit</span>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info reveal">
+          <p class="eyebrow">Get In Touch</p>
+          <h2 class="section-title">Let's Build Something<br/>Great Together.</h2>
+          <p class="body-text" style="margin-top:1.25rem;margin-bottom:2.5rem">
+            Have a project in mind? I'd love to hear about it. Drop me a message
+            and I'll get back to you within 24 hours.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <div class="c-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="c-label">Email</span>
+                <a href="mailto:alex@example.com">alex@example.com</a>
+              </div>
+            </li>
+            <li>
+              <div class="c-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="c-label">Location</span>
+                <span>New York, NY · Remote Friendly</span>
+              </div>
+            </li>
+            <li>
+              <div class="c-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <span class="c-label">Availability</span>
+                <span>Open to full-time &amp; freelance</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="social-row">
+            <a href="#" aria-label="GitHub" class="soc-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="soc-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM3.56 20.45h3.55V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter / X" class="soc-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2h3.12l-6.82 7.8L22.5 22h-6.28l-4.92-6.43L5.6 22H2.47l7.3-8.34L2 2h6.44l4.45 5.88zm-1.1 18h1.73L6.96 3.73H5.1z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name" />
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+                <span class="form-error" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+              <span class="form-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-dark btn-submit">
+              <span class="btn-text">Send Message</span>
+              <span aria-hidden="true">→</span>
+            </button>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+              ✓ Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="nav-logo">AM<span class="dot">.</span></a>
+      <p class="footer-copy">© 2026 Alex Morgan. Built with care.</p>
+      <a href="#hero" class="back-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
