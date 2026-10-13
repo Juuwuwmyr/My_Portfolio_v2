@@ -472,23 +472,20 @@ input,textarea{font-family:inherit}
 .hero-photo{
   position:relative;
   z-index:1;
-  align-self:stretch;
   display:flex;
-  align-items:flex-start;
+  align-items:center;      /* center the square vertically with the text */
   justify-content:center;
 }
 
 .hero-photo-frame{
   position:relative;
   width:100%;
-  min-height:600px;
   background:none;
   border:none;
   display:flex;
-  align-items:flex-start;
+  align-items:center;
   justify-content:center;
   overflow:visible;
-  margin-top:calc(-1 * var(--nav-h));
 }
 
 /* ── Square photo card ── */
@@ -577,7 +574,7 @@ input,textarea{font-family:inherit}
 /* ── Floating badge — bottom right ── */
 .hero-badge-br{
   position:absolute;
-  bottom:60px; right:-16px;
+  bottom:-88px; right:-16px;
   z-index:3;
   background:var(--black);
   color:var(--white);
